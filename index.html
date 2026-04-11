@@ -38,15 +38,48 @@
                 borderRadius: '12px',
                 padding: '2rem',
                 textAlign: 'center',
-                maxWidth: '440px',
+                maxWidth: '560px',
                 boxShadow: '0 10px 24px rgba(0,0,0,0.08)'
               }
             },
-            React.createElement('h1', { style: { marginTop: 0 } }, 'Hello React 👋'),
             React.createElement(
-              'p',
-              { style: { lineHeight: 1.5, marginBottom: 0 } },
-              'This is a very simple example frontend that runs locally with a shell script.'
+              'header',
+              null,
+              React.createElement('h1', { style: { marginTop: 0, marginBottom: '0.75rem' } }, 'Hello React 👋'),
+              React.createElement(
+                'p',
+                { style: { lineHeight: 1.5, marginTop: 0, marginBottom: '1.5rem' } },
+                'This is a very simple example frontend that runs locally with a shell script.'
+              )
+            ),
+            React.createElement(
+              'section',
+              {
+                'aria-labelledby': 'content-heading',
+                style: {
+                  textAlign: 'left',
+                  borderTop: '1px solid #e2e8f0',
+                  paddingTop: '1.5rem'
+                }
+              },
+              React.createElement(
+                'h2',
+                {
+                  id: 'content-heading',
+                  style: { marginTop: 0, marginBottom: '0.75rem', fontSize: '1.25rem' }
+                },
+                'Content'
+              ),
+              React.createElement(
+                'p',
+                { style: { lineHeight: 1.6, marginTop: 0, marginBottom: '0.75rem' } },
+                'This sample content section sits directly under the heading area and gives the page a clearer structure.'
+              ),
+              React.createElement(
+                'p',
+                { style: { lineHeight: 1.6, marginTop: 0, marginBottom: 0 } },
+                'Use this space for a short summary, feature highlights, or any introductory copy you want visitors to read next.'
+              )
             )
           )
         );
