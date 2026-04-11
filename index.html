@@ -45,8 +45,29 @@
             React.createElement('h1', { style: { marginTop: 0 } }, 'Hello React 👋'),
             React.createElement(
               'p',
-              { style: { lineHeight: 1.5, marginBottom: 0 } },
+              { style: { lineHeight: 1.5, marginBottom: '1.5rem' } },
               'This is a very simple example frontend that runs locally with a shell script.'
+            ),
+            React.createElement(
+              'section',
+              {
+                style: {
+                  textAlign: 'left',
+                  borderTop: '1px solid #e2e8f0',
+                  paddingTop: '1.5rem'
+                }
+              },
+              React.createElement('h2', { style: { marginTop: 0 } }, 'Content'),
+              React.createElement(
+                'p',
+                { style: { lineHeight: 1.6, margin: 0 } },
+                'This sample content section sits directly under the main heading and description to demonstrate how supporting copy can be organized in the page layout.'
+              ),
+              React.createElement(
+                'p',
+                { style: { lineHeight: 1.6, marginBottom: 0 } },
+                'You can replace this text with product details, onboarding information, or any other short content that should appear beneath the page header.'
+              )
             )
           )
         );
