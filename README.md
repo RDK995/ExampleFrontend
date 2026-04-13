@@ -15,3 +15,11 @@ Optionally choose a different port:
 ```
 
 Then open `http://localhost:5173` (or your chosen port) in a browser.
+
+## Check
+
+Run the lightweight repository check with:
+
+```bash
+./check.sh
+```
