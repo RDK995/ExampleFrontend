@@ -44,9 +44,52 @@
             },
             React.createElement('h1', { style: { marginTop: 0 } }, 'Hello React 👋'),
             React.createElement(
-              'p',
-              { style: { lineHeight: 1.5, marginBottom: 0 } },
-              'This is a very simple example frontend that runs locally with a shell script.'
+              'div',
+              {
+                style: {
+                  display: 'grid',
+                  gap: '1rem',
+                  textAlign: 'left'
+                }
+              },
+              React.createElement(
+                'p',
+                { style: { lineHeight: 1.5, margin: 0, textAlign: 'center' } },
+                'This is a very simple example frontend that runs locally with a shell script.'
+              ),
+              React.createElement(
+                'section',
+                {
+                  'aria-labelledby': 'content-heading',
+                  style: {
+                    background: '#f5f7fb',
+                    borderRadius: '10px',
+                    padding: '1rem 1.25rem'
+                  }
+                },
+                React.createElement(
+                  'h2',
+                  {
+                    id: 'content-heading',
+                    style: {
+                      margin: '0 0 0.5rem',
+                      fontSize: '1.1rem'
+                    }
+                  },
+                  'Content'
+                ),
+                React.createElement(
+                  'p',
+                  {
+                    style: {
+                      lineHeight: 1.6,
+                      margin: 0,
+                      color: '#334155'
+                    }
+                  },
+                  'Sample content lives here so the page has a clear section beneath the main heading. You can replace this text with product details, onboarding notes, or any other frontend copy later.'
+                )
+              )
             )
           )
         );
