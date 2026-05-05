@@ -45,8 +45,23 @@
             React.createElement('h1', { style: { marginTop: 0 } }, 'Hello React 👋'),
             React.createElement(
               'p',
-              { style: { lineHeight: 1.5, marginBottom: 0 } },
+              { style: { lineHeight: 1.5 } },
               'This is a very simple example frontend that runs locally with a shell script.'
+            ),
+            React.createElement(
+              'section',
+              { style: { textAlign: 'left', marginTop: '1.5rem' } },
+              React.createElement('h2', { style: { fontSize: '1.1rem', marginTop: 0 } }, 'About this app'),
+              React.createElement(
+                'p',
+                { style: { lineHeight: 1.6, marginBottom: '0.75rem' } },
+                'This project demonstrates a minimal React setup using ES modules loaded directly in the browser — no build step required.'
+              ),
+              React.createElement(
+                'p',
+                { style: { lineHeight: 1.6, marginBottom: 0 } },
+                'Use run.sh to start a local server and open the app in your browser.'
+              )
             )
           )
         );
