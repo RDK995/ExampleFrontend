@@ -8,6 +8,10 @@ describe('index.html', () => {
     test('contains the app heading', () => {
       expect(html).toContain('Hello React');
     });
+
+    test('has title Example React App2', () => {
+      expect(html).toContain('Example React App2');
+    });
   });
 
   describe('content section', () => {
